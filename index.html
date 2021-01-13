@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ara Sıra</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <script src="algoritmalar.js"> </script>
+</head>
+
+<body style="margin: 0 auto;">
+    
+    <div id="ilkdiv" class="testbox" style="width: 97% ; ">
+
+        <div id="form">
+
+            <div id="" class="item">
+                <p id="fp" style="text-align: center;">***YAPILACAK İŞLEM***</p>
+                <select id="islem">
+                    <option id="l" value="Linear Search">Linear Search</option>
+                    <option id="l" value="Insertion Sort">Insertion Sort</option>
+                    <option id="l" value="Binary Search">Binary Search</option>
+                    <option id="l" value="Merge Sort">Merge Sort</option>
+                    <option id="l" value="Heap Sort">Heap Sort</option>
+                    <option id="l" value="Quick Sort">Quick Sort</option>
+                    <option id="l" value="Counting Sort">Counting Sort</option>
+                    <option id="l" value="Bucket Sort">Bucket Sort</option>
+                    <option id="l" value="Radix Sort">Radix Sort</option>
+                </select>
+            </div>
+
+            <div class="item">
+                <p id="fp" style="text-align: center;">***ELEMAN SAYISI***</p>
+                <input type="number" name="sayi" id="kacsayi" min="1" value="100" max="1000000"/>
+            </div>
+
+            <div class="item">
+                <p id="fp" style="text-align: center;">***ELEMANIN MİN DEĞERİ***</p>
+                <input type="number" name="sayi" id="minsayi" min="0" value="0" />
+            </div>
+            <div class="item">
+                <p id="fp" style="text-align: center;">***ELEMANIN MAX DEĞERİ***</p>
+                <input type="number" name="sayi" id="maxsayi" min="1" value="99" />
+            </div>
+
+
+
+
+
+            <div class="btn-block" id="btn-block">
+                <button type="submit" onclick="gonder()" id="gonderr">Gönder</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container" style="margin: 0 auto;
+    width:960px;
+    ">        
+        
+<div id="bilgi1" style="
+float: left;
+margin-left: -13%;
+margin-top: -40%;
+left: 50px;
+top: 100px;
+display: none;
+justify-content: center;
+align-items: center;
+height: inherit;
+border: 1px solid transparent;
+color: #c24914;
+border-radius: 6px;
+background-image: url(background.jpg);
+background-position-x: 250px;
+box-shadow: 0 0 40px 0 #21209c; 
+padding: 20px; 
+text-align: center; 
+color: #8787ff ;"></div>
+
+
+
+<div id="bilgi3" style="
+float: right;
+margin-top: -40%;
+margin-right: -18%;
+left: 980px;
+top: 70px;
+display: none;
+justify-content: center;
+align-items: center;
+height: inherit;
+border: 1px solid transparent;
+color: #c24914;
+border-radius: 6px;
+background: url(background.jpg);
+background-position-x: 1000px;
+background-position-y: -20px;
+box-shadow: 0 0 30px 0 #4e8d7c; 
+padding: 20px; 
+text-align: center; 
+color: #93c3b7 ;"></div>
+
+
+
+<div id="tt" style="
+        box-sizing: border-box;
+        margin-top: -35%;
+        margin-bottom: 5%;
+        display: none;
+        width: 50%;
+        margin-left: 25%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        border: 1px solid transparent;
+        color: #c24914;
+        padding: 20px;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 0 60px 0 #2e2078;">
+<div id="Oliste" style="color: black;"></div>
+<div id="liste1" style="min-height:30px;
+line-height: 0px;
+max-height:210px;
+overflow-x: hidden; overflow-y: hidden;">
+<p id="liste" style="color: #c24914; max-width: 400px; padding: 0px;"></p>
+</div>
+<div id="sıraliListe" style="color: black; display: none;"></div>
+<div id="liste2" style="min-height:30px;
+line-height: 0px;
+max-height:210px;
+overflow-x: hidden; overflow-y: hidden; display: none; ">
+<p id="listee" style="color: #c24914; max-width: 400px; padding: 0px;"></p>
+</div>
+<div id="aranacakS" style="color: black; display: none;"></div>
+<div id="bulundu" style="color: black; display: none; "></div>
+<div id="islemS" style="color: black;"></div>
+<div id="yontem" style="color: black;"></div>
+<div id="sure" style="color: black;"></div> <br>
+<a href="index.html"><button id="buton" type="button" style="display: none;  
+margin-left: 150px;         
+width: 100px;
+padding: 10px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+">Anasayfa</button> </a>
+</div>
+
+
+
+<div id="bilgi2" style="
+float: left;
+margin-left: -13%;
+margin-top: -20%;
+display: none;
+justify-content: center;
+align-items: center;
+height: inherit;
+border: 1px solid transparent;
+color: #c24914;
+border-radius: 6px;
+background: url(background.jpg);
+background-position-x:870px ;
+background-position-y:20px;
+box-shadow: 0 0 30px 0 #4e8d7c; 
+padding: 20px; 
+text-align: center; 
+color: #93c3b7 ;"></div>
+<!--      background-position: 180px;                 background-position-x: -10px;
+background-position-y:-2px ; -->
+
+
+
+<div id="bilgi4" style="
+float: right;
+margin-top: -20%;
+margin-right: -18%;
+display: none;
+justify-content: center;
+align-items: center;
+height: inherit;
+border: 1px solid transparent;
+color: #c24914;
+border-radius: 6px;
+background-image: url(background.jpg);
+background-position-x: 480px;
+box-shadow: 0 0 40px 0 #21209c; 
+padding: 20px; 
+text-align: center; 
+color: #8787ff ;"></div>
+    </div>
+
+    
+
+
+
+
+</body>
+
+</html>
