@@ -1,5 +1,7 @@
 # ARA SIRA
 Ara Sıra çeşitli arama/sıralama algoritmalarını çalıştıran bir web site projesidir. Javascript kullanılarak geliştirilmiştir.
+
+Site linki: http://arasira.orgfree.com/index.html
 ## Kullanılan Algoritmalar
 <ul>
   <li>Linear Search</li>
@@ -13,7 +15,7 @@ Ara Sıra çeşitli arama/sıralama algoritmalarını çalıştıran bir web sit
   <li>Radix Sort</li>
 </ul>
 
-## Site Tanıtımı 
+## Site
 Siteye giriş yapıldığında  `Yapılacak İşlem`,  `Eleman Sayısı`,  `Elemanın Min/Max Değeri` gibi yapmak istediğimiz işleme göre değiştirilecek ekran geliyor.
 
 ![Screenshot_2](https://user-images.githubusercontent.com/43846857/107160859-e9edd700-69a9-11eb-9b18-95e99cf721ba.png)
@@ -36,3 +38,7 @@ Gerekli seçimler yapılıp `Gönder` butonuna tıklanıldığında ise kullanı
 
 ![Screenshot_3](https://user-images.githubusercontent.com/43846857/107160862-ece8c780-69a9-11eb-94f0-da8f190f051f.png)
 
+## Not
+Bucket Sort algoritmasında ister tam sayı ister ise ondalıklı sayılarla işlem yapabilirsiniz. Bucket sort algoritmasını seçip, gönder butonuna tıkladıktan sonra gelecek prompt'tan seçiminizi yapabilirsiniz.
+
+![Screenshot_5](https://user-images.githubusercontent.com/43846857/107160867-f4a86c00-69a9-11eb-8d69-4726f936adb2.png)
